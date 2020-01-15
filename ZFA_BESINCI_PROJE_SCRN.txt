@@ -1,0 +1,26 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_BESINCI_PROJE_SCRN
+*&---------------------------------------------------------------------*
+SELECTION-SCREEN BEGIN OF BLOCK blok WITH FRAME TITLE text-001.
+
+SELECTION-SCREEN SKIP.
+PARAMETERS : p1 RADIOBUTTON GROUP rb1.
+SELECTION-SCREEN SKIP.
+PARAMETERS : p2 RADIOBUTTON GROUP rb1.
+SELECTION-SCREEN SKIP.
+PARAMETERS : p3 RADIOBUTTON GROUP rb1.
+SELECTION-SCREEN SKIP.
+
+SELECT-OPTIONS : s_banfn FOR g_banfn NO-EXTENSION NO INTERVALS,
+                 s_bsart FOR g_bsart NO-EXTENSION NO INTERVALS,
+                 s_bstyp FOR g_bstyp NO-EXTENSION,
+                 s_ekgrp FOR g_ekgrp, "NO-EXTENSION,
+                 s_ernam FOR g_ernam NO-EXTENSION,
+                 s_erdat FOR g_erdat NO-EXTENSION,
+                 s_afnam FOR g_afnam NO-EXTENSION,
+                 s_werks FOR g_werks  NO-EXTENSION,
+                 s_lgort FOR g_lgort  NO-EXTENSION,
+                 s_matkl FOR g_matkl NO-EXTENSION,
+                 s_lifnr FOR g_lifnr NO-EXTENSION.
+
+SELECTION-SCREEN END OF BLOCK blok.

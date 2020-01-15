@@ -1,0 +1,27 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_BESINCI_PROJE_TOP
+*&---------------------------------------------------------------------*
+TYPE-POOLS slis.
+
+TABLES : eban,
+         t001w,
+         t001l,
+         lfa1,
+         zfa_09_alv_odev.
+
+DATA: it_inner    TYPE TABLE OF zfa_09_alv_odev,   "ZFA_09_ALV_ODEV stracture tablo oncede gerkli alnları ekledik
+      ls_layout   TYPE slis_layout_alv,
+      it_fieldcat TYPE slis_t_fieldcat_alv,
+      wa_fieldcat TYPE slis_fieldcat_alv.
+
+DATA :   g_banfn  TYPE  eban-banfn,
+         g_bsart  TYPE  eban-bsart,
+         g_bstyp  TYPE  eban-bstyp,
+         g_ekgrp  TYPE  eban-ekgrp,
+         g_ernam  TYPE  eban-ernam,
+         g_erdat  TYPE  eban-erdat,
+         g_afnam  TYPE  eban-afnam,
+         g_werks  TYPE  eban-werks,
+         g_lgort  TYPE  eban-lgort,
+         g_matkl  TYPE  eban-matkl,
+         g_lifnr  TYPE  eban-lifnr.

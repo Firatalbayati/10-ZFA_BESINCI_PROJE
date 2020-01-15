@@ -1,0 +1,264 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_BESINCI_PROJE_ALV
+*&---------------------------------------------------------------------*
+FORM  manuel_fieldcatalog.
+
+  ls_layout-zebra = abap_true.
+  ls_layout-colwidth_optimize = abap_true.
+
+  wa_fieldcat-col_pos = '1'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'BANFN'.
+  wa_fieldcat-seltext_m = 'BANFN'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+  wa_fieldcat-col_pos = '2'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'BSART'.
+  wa_fieldcat-seltext_m = 'BSART'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '3'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'BSTYP'.
+  wa_fieldcat-seltext_m = 'BSTYP'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '4'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'EKGRP'.
+  wa_fieldcat-seltext_m = 'EKGRP'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '5'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'ERNAM'.
+  wa_fieldcat-seltext_m = 'ERNAM'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '6'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'ERDAT'.
+  wa_fieldcat-seltext_m = 'ERDAT'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '7'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'AFNAM'.
+  wa_fieldcat-seltext_m = 'AFNAM'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '8'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'TXZ01'.
+  wa_fieldcat-seltext_m = 'TXZ01'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '9'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'WERKS'.
+  wa_fieldcat-seltext_m = 'WERKS'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '10'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'T001W'.
+  wa_fieldcat-fieldname = 'NAME1'.
+  wa_fieldcat-seltext_m = 'Üretim yeri'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '11'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'LGORT'.
+  wa_fieldcat-seltext_m = 'LGORT'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '12'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'T001L'.
+  wa_fieldcat-fieldname = 'LGOBE'.
+  wa_fieldcat-seltext_m = 'LGOBE'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '13'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'MATKL'.
+  wa_fieldcat-seltext_m = 'MATKL'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '14'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'MENGE'.
+  wa_fieldcat-seltext_m = 'MENGE'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '15'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'MEINS'.
+  wa_fieldcat-seltext_m = 'MEINS'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '16'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'EBAN'.
+  wa_fieldcat-fieldname = 'LIFNR'.
+  wa_fieldcat-seltext_m = 'LIFNR'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '17'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'LFA1'.
+  wa_fieldcat-fieldname = 'LNAME1'.
+  wa_fieldcat-seltext_m = 'Satici Adi'.
+
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+  CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+    EXPORTING
+      i_callback_program = sy-cprog
+      is_layout          = ls_layout
+      it_fieldcat        = it_fieldcat
+* IMPORTING
+*     E_EXIT_CAUSED_BY_CALLER           =
+*     ES_EXIT_CAUSED_BY_USER            =
+    TABLES
+      t_outtab           = it_inner
+* EXCEPTIONS
+*     PROGRAM_ERROR      = 1
+*     OTHERS             = 2
+    .
+  IF sy-subrc <> 0.
+* Implement suitable error handling here
+  ENDIF.
+
+ENDFORM.
+
+
+
+FORM display.
+  ls_layout-zebra = abap_true.
+  ls_layout-colwidth_optimize = abap_true.
+
+  IF it_inner IS NOT INITIAL. "eger tablo boş değilise ekranda göster
+
+    CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+      EXPORTING
+        i_callback_program = sy-cprog
+        is_layout          = ls_layout
+        i_structure_name   = 'ZFA_09_ALV_ODEV'
+* IMPORTING
+*       E_EXIT_CAUSED_BY_CALLER           =
+*       ES_EXIT_CAUSED_BY_USER            =
+      TABLES
+        t_outtab           = it_inner
+* EXCEPTIONS
+*       PROGRAM_ERROR      = 1
+*       OTHERS             = 2
+      .
+    IF sy-subrc <> 0.
+* Implement suitable error handling here
+    ENDIF.
+
+  ELSE.  "eğer tablo boş ise error mesajını yaz
+
+    MESSAGE i000(zfa_message_class) DISPLAY LIKE 'E'.
+
+  ENDIF.
+ENDFORM.
+
+FORM  structure_fieldcatalog.
+*ls_layout-zebra = abap_true.
+*ls_layout-colwidth_optimize = abap_true.
+*
+*  CALL FUNCTION 'REUSE_ALV_FIELDCATALOG_MERGE'
+*    EXPORTING
+**     I_PROGRAM_NAME   =
+**     I_INTERNAL_TABNAME           =
+*      i_structure_name = 'EBAN'
+**     I_CLIENT_NEVER_DISPLAY       = 'X'
+**     I_INCLNAME       =
+**     I_BYPASSING_BUFFER           =
+**     I_BUFFER_ACTIVE  =
+*    CHANGING
+*      ct_fieldcat      = it_table
+** EXCEPTIONS
+**     INCONSISTENT_INTERFACE       = 1
+**     PROGRAM_ERROR    = 2
+**     OTHERS           = 3
+*    .
+*  IF sy-subrc <> 0.
+** Implement suitable error handling here
+*  ENDIF.
+*
+*
+*  IF it_inner IS NOT INITIAL. "eger tablo boş değilise ekranda göster
+*
+*    CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+*      EXPORTING
+*        i_callback_program = sy-cprog
+*        is_layout          = ls_layout
+**        i_structure_name   = 'ZFA_09_ALV_ODEV'
+** IMPORTING
+**       E_EXIT_CAUSED_BY_CALLER           =
+**       ES_EXIT_CAUSED_BY_USER            =
+*      TABLES
+*        t_outtab           = it_table
+** EXCEPTIONS
+**       PROGRAM_ERROR      = 1
+**       OTHERS             = 2
+*      .
+*    IF sy-subrc <> 0.
+** Implement suitable error handling here
+*    ENDIF.
+*
+*  ELSE.  "eğer tablo boş ise error mesajını yaz
+*
+*    MESSAGE i000(zfa_message_class) DISPLAY LIKE 'E'.
+*
+*  ENDIF.
+ENDFORM.

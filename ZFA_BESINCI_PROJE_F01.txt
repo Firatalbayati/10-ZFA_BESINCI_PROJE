@@ -1,0 +1,33 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_BESINCI_PROJE_F01
+*&---------------------------------------------------------------------*
+FORM get_data.                        " EA EBAN  KISALTILMIŞI
+  SELECT    ea~banfn
+            ea~bsart
+            ea~bstyp
+            ea~ekgrp
+            ea~ernam
+            ea~erdat
+            ea~afnam
+            ea~werks
+            ea~lgort
+            ea~matkl
+            ea~lifnr
+
+
+                       FROM eban AS ea
+           INTO CORRESPONDING FIELDS OF TABLE it_inner
+            WHERE ea~banfn IN s_banfn
+              AND ea~bsart IN s_bsart
+              AND ea~bstyp IN s_bstyp
+              AND ea~ekgrp IN s_ekgrp
+              AND ea~ernam IN s_ernam
+              AND ea~erdat IN s_erdat
+              AND ea~afnam IN s_afnam
+              AND ea~werks IN s_werks
+              AND ea~lgort IN s_lgort
+              AND ea~matkl IN s_matkl
+              AND ea~lifnr IN s_lifnr.
+
+
+ENDFORM.
